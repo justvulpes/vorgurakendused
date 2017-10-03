@@ -1,0 +1,51 @@
+.cubing-table {
+    width: 25%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+.padded_h1 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.first_row {
+    background-color: #e3e3e3
+}
+
+.bg1 {
+    background-color: #e3e3e3
+}
+
+.top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img-center {
+    display: block;
+    margin: auto
+}
+
+.helloworld-bg {
+    background-image: url("../images/helloworld_bg.png");
+}
+
+.skills {
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.checkmark {
+    list-style: none;
+}
+
+.checkmark li:before {
+    content: '✓ ';
+}
