@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--suppress HtmlUnknownTarget -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a style="font-family: Stencil, sans-serif" class="navbar-brand" href="../index.html">Practicum II</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Minesweeper</a> </li>
+            <li><a href="results.html">Results</a> </li>
+            <li class="active"><a href="debug.html">Debug</a> </li>
+        </ul>
+    </div>
+</nav>
+
+<h1>ADD ENTRY</h1>
+
+<form id="contactForm1" action="http://dijkstra.cs.ttu.ee/~rareba/cgi-bin/test.py" method="post">
+    Name <input type="text" name="name" title="input_name" autocomplete="off"/><br>
+    Board Size <input type="text" name="board_size" title="input_board_size" autocomplete="off"/><br>
+    Bombs <input type="text" name="bombs" title="input_bombs" autocomplete="off"/><br>
+    Result <input type="text" name="result" title="input_result" autocomplete="off"/><br>
+    Moves <input type="text" name="moves" title="input_moves" autocomplete="off"/><br>
+    <input type="submit">
+</form>
+
+<script type="text/javascript">
+    let frm = $('#contactForm1');
+
+    frm.submit(function (e) {
+
+        e.preventDefault();
+
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize() + '&' + $.param({"op": "entry"}),
+            success: function (data) {
+                console.log('Submission was successful.');
+                console.log(data);
+            },
+            error: function (data) {
+                console.log('An error occurred.');
+                console.log(data);
+            },
+        });
+    });
+</script>
+
+</body>
+</html>

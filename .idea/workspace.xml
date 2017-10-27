@@ -2,31 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f138517d-4160-4d51-82c7-d60f3e18fa67" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/favicon-32x32.png" afterPath="$PROJECT_DIR$/public_html/favicon-32x32.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/public_html/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/p5js/index.html" afterPath="$PROJECT_DIR$/public_html/p5js/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/p5js/sketch.js" afterPath="$PROJECT_DIR$/public_html/p5js/sketch.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax1/about.html" afterPath="$PROJECT_DIR$/public_html/prax1/about.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax1/blog.html" afterPath="$PROJECT_DIR$/public_html/prax1/blog.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax1/contact.html" afterPath="$PROJECT_DIR$/public_html/prax1/contact.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax1/css/style.css" afterPath="$PROJECT_DIR$/public_html/prax1/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax1/images/cube.jpeg" afterPath="$PROJECT_DIR$/public_html/prax1/images/cube.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax1/images/fish.png" afterPath="$PROJECT_DIR$/public_html/prax1/images/fish.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax1/images/head.png" afterPath="$PROJECT_DIR$/public_html/prax1/images/head.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax1/images/helloworld_bg.png" afterPath="$PROJECT_DIR$/public_html/prax1/images/helloworld_bg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax1/images/mail.png" afterPath="$PROJECT_DIR$/public_html/prax1/images/mail.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax1/images/terminal_mini.png" afterPath="$PROJECT_DIR$/public_html/prax1/images/terminal_mini.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax1/index.html" afterPath="$PROJECT_DIR$/public_html/prax1/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax1/skills.html" afterPath="$PROJECT_DIR$/public_html/prax1/skills.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax2/app.js" afterPath="$PROJECT_DIR$/public_html/prax2/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax2/index.html" afterPath="$PROJECT_DIR$/public_html/prax2/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax2/style.css" afterPath="$PROJECT_DIR$/public_html/prax2/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax3/app.js" afterPath="$PROJECT_DIR$/public_html/prax3/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/prax3/index.html" afterPath="$PROJECT_DIR$/public_html/prax3/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vorgurakendused.iml" afterPath="$PROJECT_DIR$/.idea/vorgurakendused.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public_html/cgi-bin/legacy_exec.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/cgi-bin/test.py" afterPath="$PROJECT_DIR$/public_html/cgi-bin/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/prax2/index.html" afterPath="$PROJECT_DIR$/public_html/prax2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/prax3/app.js" afterPath="$PROJECT_DIR$/public_html/prax3/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/prax3/index.html" afterPath="$PROJECT_DIR$/public_html/prax3/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,56 +19,60 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/vorgurakendused$write_results.coverage" NAME="write_results Coverage Results" MODIFIED="1509051412706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/public_html/prax3" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/prax2/index.html">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10369/home/rareba/public_html/cgi-bin/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="175">
+              <caret line="94" column="14" lean-forward="true" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
               <folding>
-                <marker date="1508454580957" expanded="true" signature="542:1575" ph="..." />
-                <marker date="1508454580957" expanded="true" signature="578:796" ph="..." />
-                <marker date="1508454580957" expanded="true" signature="612:789" ph="..." />
-                <marker date="1508454580957" expanded="true" signature="648:778" ph="..." />
-                <marker date="1508454580957" expanded="false" signature="672:704" ph="..." />
-                <marker date="1508454580957" expanded="true" signature="857:889" ph="..." />
-                <marker date="1508454580957" expanded="true" signature="923:1438" ph="..." />
-                <marker date="1508454580957" expanded="true" signature="959:1431" ph="..." />
-                <marker date="1508454580957" expanded="true" signature="975:1206" ph="..." />
-                <marker date="1508454580957" expanded="true" signature="1023:1189" ph="..." />
-                <marker date="1508454580957" expanded="true" signature="1235:1327" ph="..." />
-                <marker date="1508454580957" expanded="true" signature="1529:1567" ph="..." />
+                <element signature="e#240#542#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/prax2/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="72" column="1" lean-forward="false" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/prax2/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public_html/prax3/app.js">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12100/home/rareba/public_html/prax3/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="400">
+              <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10033/home/rareba/public_html/prax3/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5">
+              <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results.html" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10803/home/rareba/public_html/prax3/results.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="debug.html" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10593/home/rareba/public_html/prax3/debug.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -100,13 +85,13 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>console.log</find>
       <find>minesweeper</find>
       <find>reached</find>
       <find>board</find>
@@ -120,7 +105,15 @@
       <find>height</find>
       <find>text</find>
       <find>&quot;been-clicked</find>
+      <find>half</find>
+      <find>lost</find>
+      <find>console.log</find>
+      <find>filename</find>
+      <find>add_sa</find>
     </findStrings>
+    <replaceStrings>
+      <replace>results_path</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,7 +135,6 @@
         <option value="$PROJECT_DIR$/prax3/logic.py" />
         <option value="$PROJECT_DIR$/prax3/backend.py" />
         <option value="$PROJECT_DIR$/public_html/cgi-bin/hello.py" />
-        <option value="$PROJECT_DIR$/public_html/prax3/index.html" />
         <option value="$PROJECT_DIR$/public_html/prax3/app.js" />
         <option value="$PROJECT_DIR$/public_html/cgi-bin/test.py" />
         <option value="$PROJECT_DIR$/public_html/cgi-bin/legacy_exec.py" />
@@ -150,8 +142,33 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp19605/home/rareba/public_html/cgi-bin/test.py" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp28779/home/rareba/public_html/prax3/index.html" />
         <option value="$PROJECT_DIR$/public_html/prax2/app.js" />
-        <option value="$PROJECT_DIR$/public_html/prax2/index.html" />
         <option value="$PROJECT_DIR$/public_html/prax2/style.css" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp49943/home/rareba/public_html/cgi-bin/test2.py" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp58717/home/rareba/public_html/prax3/index.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp57572/home/rareba/public_html/cgi-bin/test2.py" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp29833/home/rareba/public_html/cgi-bin/player_data.txt" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp01435/home/rareba/public_html/cgi-bin/test.py" />
+        <option value="$PROJECT_DIR$/public_html/prax3/write_results.py" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp08036/home/rareba/public_html/prax3/results.json" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp37495/home/rareba/public_html/cgi-bin/test2.py" />
+        <option value="$PROJECT_DIR$/public_html/prax2/index.html" />
+        <option value="$PROJECT_DIR$/public_html/prax3/debug.html" />
+        <option value="$PROJECT_DIR$/public_html/prax3/results.html" />
+        <option value="$PROJECT_DIR$/public_html/prax3/index.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp35017/home/rareba/public_html/prax3/results.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp36989/home/rareba/public_html/prax3/index.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp42592/home/rareba/public_html/prax3/debug.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp37727/home/rareba/public_html/cgi-bin/test.py" />
+        <option value="$PROJECT_DIR$/public_html/prax3/cheese.ipynb" />
+        <option value="$PROJECT_DIR$/public_html/prax3/saves.json" />
+        <option value="$PROJECT_DIR$/hey.py" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp10033/home/rareba/public_html/prax3/index.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp10593/home/rareba/public_html/prax3/debug.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp10803/home/rareba/public_html/prax3/results.html" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp10369/home/rareba/public_html/cgi-bin/test.py" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp12100/home/rareba/public_html/prax3/app.js" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp22593/home/rareba/public_html/prax3/saves.json" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp43220/home/rareba/public_html/prax3/results.json" />
       </list>
     </option>
   </component>
@@ -227,6 +244,12 @@
               <item name="vorgurakendused" type="462c0819:PsiDirectoryNode" />
               <item name="public_html" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="vorgurakendused" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vorgurakendused" type="462c0819:PsiDirectoryNode" />
+              <item name="public_html" type="462c0819:PsiDirectoryNode" />
+              <item name="prax3" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -244,6 +267,9 @@
     <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\t440s\dev\vorgurakendused\public_html\prax3" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\t440s\dev\vorgurakendused\public_html\prax2\imgs" />
       <recent name="C:\Users\t440s\dev\vorgurakendused\public_html" />
@@ -262,7 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.write_results">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -328,9 +354,6 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/prax2">
-      <method />
-    </configuration>
     <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vorgurakendused/prax2/index.html" />
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vorgurakendused/p5js/index.html" />
     <configuration default="false" name="sketch.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="sketch.js" working-dir="$PROJECT_DIR$/p5js">
@@ -354,15 +377,35 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="3">
+    <configuration name="write_results" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/public_html/prax3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="vorgurakendused" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/public_html/prax3/write_results.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.test" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.write_results" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.write_results" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -393,18 +436,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.139375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33944955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33944955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -431,225 +475,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public_html/prax2/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/p5js/sketch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax3/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/p5js/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax3/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/p5js/sketch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/p5js/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="121" lean-forward="false" selection-start-line="20" selection-start-column="121" selection-end-line="20" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/p5js/sketch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/p5js/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax2/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax2/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax2/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax2/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax2/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax2/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax1/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prax2/temp.html" />
-    <entry file="file://$PROJECT_DIR$/public_html/prax1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p5js/p5lib/p5.js" />
-    <entry file="file://$PROJECT_DIR$/p5js/p5lib/p5.min.js" />
-    <entry file="file://$PROJECT_DIR$/p5js/p5lib/desktop.ini" />
-    <entry file="file://$PROJECT_DIR$/prax3/hello.py" />
-    <entry file="file://$PROJECT_DIR$/public_html/p5js/sketch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/p5js/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/OneDrive - Tallinn University of Technology/side praks1/Labor1Ragnar.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="210" column="0" lean-forward="false" selection-start-line="210" selection-start-column="0" selection-end-line="211" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax3/backend.py" />
-    <entry file="file://$PROJECT_DIR$/public_html/prax3/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/cgi-bin/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp28462/home/rareba/public_html/prax3/app.js" />
-    <entry file="file://$PROJECT_DIR$/public_html/cgi-bin/legacy_exec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp43616/home/rareba/public_html/cgi-bin/test2.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO47E904DC/readMessages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp19605/home/rareba/public_html/cgi-bin/test.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/scp28779/home/rareba/public_html/prax3/index.html" />
     <entry file="file://$PROJECT_DIR$/public_html/prax2/imgs/number0.png" />
     <entry file="file://$PROJECT_DIR$/public_html/prax2/imgs/number1.png" />
@@ -658,30 +483,9 @@
     <entry file="file://$PROJECT_DIR$/public_html/prax2/imgs/number4.png" />
     <entry file="file://$PROJECT_DIR$/public_html/prax2/imgs/number5.png" />
     <entry file="file://$PROJECT_DIR$/public_html/prax2/imgs/number6.png" />
-    <entry file="file://$PROJECT_DIR$/public_html/prax2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <marker date="1508454580957" expanded="true" signature="542:1575" ph="..." />
-            <marker date="1508454580957" expanded="true" signature="578:796" ph="..." />
-            <marker date="1508454580957" expanded="true" signature="612:789" ph="..." />
-            <marker date="1508454580957" expanded="true" signature="648:778" ph="..." />
-            <marker date="1508454580957" expanded="false" signature="672:704" ph="..." />
-            <marker date="1508454580957" expanded="true" signature="857:889" ph="..." />
-            <marker date="1508454580957" expanded="true" signature="923:1438" ph="..." />
-            <marker date="1508454580957" expanded="true" signature="959:1431" ph="..." />
-            <marker date="1508454580957" expanded="true" signature="975:1206" ph="..." />
-            <marker date="1508454580957" expanded="true" signature="1023:1189" ph="..." />
-            <marker date="1508454580957" expanded="true" signature="1235:1327" ph="..." />
-            <marker date="1508454580957" expanded="true" signature="1529:1567" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/prax2/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
+        <state relative-caret-position="1420">
           <caret line="72" column="1" lean-forward="false" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
           <folding />
         </state>
@@ -690,16 +494,190 @@
     <entry file="file://$PROJECT_DIR$/public_html/prax2/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp28595/home/rareba/public_html/prax3/app.js" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp28851/home/rareba/public_html/prax3/index.html" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp49943/home/rareba/public_html/cgi-bin/test2.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp58120/home/rareba/public_html/prax3/app.js" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp57572/home/rareba/public_html/cgi-bin/test2.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp00935/home/rareba/public_html/cgi-bin/player_data.txt" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp58717/home/rareba/public_html/prax3/index.html" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29833/home/rareba/public_html/cgi-bin/player_data.txt" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp01435/home/rareba/public_html/cgi-bin/test.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp37257/home/rareba/public_html/cgi-bin/player_data.txt" />
+    <entry file="file://$PROJECT_DIR$/public_html/prax3/results.txt" />
+    <entry file="file://$PROJECT_DIR$/public_html/prax3/results.csv" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp37960/home/rareba/public_html/prax3/cheese.txt" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp08036/home/rareba/public_html/prax3/results.json" />
+    <entry file="file://$PROJECT_DIR$/public_html/prax3/write_results.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/cgi-bin/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/prax1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/prax2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="56" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/prax3/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp37105/home/rareba/public_html/prax3/app.js" />
+    <entry file="file://$PROJECT_DIR$/public_html/prax3/debug.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/prax3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/prax3/results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp36989/home/rareba/public_html/prax3/index.html" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp42592/home/rareba/public_html/prax3/debug.html" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp37495/home/rareba/public_html/cgi-bin/test2.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp35017/home/rareba/public_html/prax3/results.html" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp37727/home/rareba/public_html/cgi-bin/test.py" />
+    <entry file="file://$PROJECT_DIR$/public_html/prax3/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/prax3/app.js">
+    <entry file="file://$PROJECT_DIR$/public_html/prax3/cheese.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/prax3/results.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hey.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/prax3/saves.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-141749676/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="337" column="8" lean-forward="true" selection-start-line="337" selection-start-column="8" selection-end-line="337" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10593/home/rareba/public_html/prax3/debug.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10803/home/rareba/public_html/prax3/results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10033/home/rareba/public_html/prax3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10369/home/rareba/public_html/cgi-bin/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="94" column="14" lean-forward="true" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
+          <folding>
+            <element signature="e#240#542#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp22593/home/rareba/public_html/prax3/saves.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp43220/home/rareba/public_html/prax3/results.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp12100/home/rareba/public_html/prax3/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--suppress HtmlUnknownTarget -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a style="font-family: Stencil, sans-serif" class="navbar-brand" href="../index.html">Practicum II</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Minesweeper</a> </li>
+            <li class="active"><a href="results.html">Results</a> </li>
+            <li><a href="debug.html">Debug</a> </li>
+        </ul>
+    </div>
+</nav>
+<div class="results"></div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            type: "POST",
+            url: "http://dijkstra.cs.ttu.ee/~rareba/cgi-bin/test.py",
+            data: {"op": "display"},
+            success: function (data) {
+                console.log('Submission was successful.');
+                console.log(data);
+                $(".results").html(data);
+            },
+            error: function (data) {
+                console.log('An error occurred.');
+                console.log(data);
+            },
+        });
+    });
+</script>
+
+</body>
+</html>
