@@ -40,7 +40,7 @@ def make_table():
     for d in data:
         r += "<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>".format(d["name"], d["board_size"], d["bombs"], d["result"], d["moves"])
     r += "</table>"
-    print("<html><head><title>test.py</title></head><body><h1>Minesweeper!@@@</h1><p>Game results:</p>" + r + "</body>")
+    print("<html><head><title>action.py</title></head><body><h1>Minesweeper!</h1><p>Game results:</p>" + r + "</body>")
 
 
 def add_entry(file, entry):
@@ -51,12 +51,20 @@ def add_entry(file, entry):
         json.dump(data, f, indent=2)
 
 
-def add_save(file, name, board):
+def add_save(file, name, gameData):
     with open(file, "r") as f:
         data = json.load(f)
-    data[name] = board
+    data[name] = gameData
     with open(file, "w") as f:
         json.dump(data, f, indent=2)
+
+
+def load_game(file, name):
+    with open(file, "r") as f:
+        data = json.load(f)
+    if name not in data:
+        return []
+    return json.dumps(data[name])
 
 
 def delete_all_saves(file):
@@ -108,12 +116,21 @@ def main():
         add_entry(results_path, entry)
     elif form["op"].value == "save":
         print("SAVE DATA!")
-        add_save(save_path, form["name"].value, json.loads(form["board"].value))
+        print(form["board"].value)
+        print(form["boardInfo"].value)
+        print(form["moves"].value)
+        print(form["safeCells"].value)
+        data = {"board": json.loads(form["board"].value), "boardInfo": json.loads(form["boardInfo"].value),
+                "moves": form["moves"].value, "safeCells": form["safeCells"].value, "neighbours": json.loads(form["neighbours"].value)}
+        add_save(save_path, form["name"].value, data)
     elif form["op"].value == "load":
-        print("LOAD DATA!")
+        print(load_game(save_path, form["name"].value), end="")
     elif form["op"].value == "delete":
-        print("DELETE DATA!")
+        print("DELETE SAVES!")
         delete_all_saves(save_path)
+    elif form["op"].value == "delresults":
+        print("DELETE RESULTS!")
+        delete_all_entries(results_path)
     elif form["op"].value == "display":
         print("DISPLAY DATA!")
         sort_results("name")

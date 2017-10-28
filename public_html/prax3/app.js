@@ -1,13 +1,15 @@
-// todo: every number has a different color
-// todo: css touch ups
+// TODO: every number has a different color
+// TODO: css touch ups
+// TODO: DISABLE SAVING FINISHED GAMED AND IF GAME HAS NOT STARTED (NO TABLE)! PREVENTS BUGS :)
 
 
 $(document).ready(function () {
     console.log("Document ready.");
     handleBeginButton();
-    handleButtonPost($("#js-save"), {"op": "save", "name": "tempname", "board": JSON.stringify([[1, 1], [0, 1]])})
-    handleButtonPost($("#js-load"), {"op": "load", "name": "tempname"})
-    handleButtonPost($("#js-delete"), {"op": "delete"})
+    handleButtonPost($("#js-save"), saveData, true, false);
+    handleButtonPost($("#js-load"), loadData, true, true);
+    handleButtonPost($("#js-delete"), {"op": "delete"}, false, false);
+    handleButtonPost($("#js-delresults"), {"op": "delresults"}, false, false);
 });
 
 // global variables
@@ -18,12 +20,14 @@ let openedColor = "lightgreen";
 let movesMade = 0;
 let name = "unnamed";
 let minesCount = 0;
+let saveData = {"op": "save", "name": "tempname", "board": JSON.stringify([]),
+    "boardInfo": JSON.stringify([]), "moves": movesMade, "safeCells": safeCellsLeft, "neighbours": JSON.stringify([])};
+let loadData = {"op": "load", "name": "tempname"};
 
 // handle clicking on Begin button
 function handleBeginButton() {
     $("#js-begin").click(function () {
         $(".js-table").remove();
-        $(".js-alert").empty();
         movesMade = 0;
         $('#minesweeper-board').append('<table class="js-table"></table>');
         let boardSize = $("#board-size").val();
@@ -38,6 +42,7 @@ function handleBeginButton() {
         }
         name = $("#js-name");
         safeCellsLeft = boardSize * boardSize - minesCount;
+        saveData.safeCells = safeCellsLeft;
     });
 }
 
@@ -50,23 +55,32 @@ function setupBoard(boardSize, minesCount) {
     shuffle(cells);
 
     let tableElement = $(".js-table");
-    let board = [], counter = 0;
+    let board = [], boardInfo = [], neighbours = [], counter = 0;
     board.length = 0;  // clear the array
     for (let row = 0; row < boardSize; row++) {
         let rowCells = [];
+        let emptyCells = [];
+        let emptyNbs = [];
         let rowElement = $("<tr>");
         tableElement.append(rowElement);
         for (let col = 0; col < boardSize; col++) {
             rowCells[col] = cells[counter++];
+            emptyCells[col] = 0;
+            emptyNbs[col] = 0;
             let cellElement = $("<td>");
             cellElement.attr("data-row", row);
             cellElement.attr("data-col", col);
             rowElement.append(cellElement);
         }
         board[row] = rowCells;
+        boardInfo[row] = emptyCells;
+        neighbours[row] = emptyNbs;
     }
     console.log(board);
-    handleClicks(tableElement, board, boardSize);
+    saveData.board = JSON.stringify(board);
+    saveData.boardInfo = boardInfo;
+    saveData.moves = movesMade;
+    handleClicks(tableElement, board, boardSize, boardInfo, neighbours);
 }
 
 // shuffle an array in place
@@ -79,11 +93,9 @@ function shuffle(array) {
 }
 
 // handle clicks on table
-function handleClicks(tableElement, board, size) {
+function handleClicks(tableElement, board, size, boardInfo, nbs) {
     tableElement.on('click', 'td', function () {
         if ($(this).attr("class") === "been-clicked") return;  // disable clicking on opened cell
-        let notificationElem = $("#notification");
-        notificationElem.empty();
         let row = parseInt($(this).attr("data-row"));
         let col = parseInt($(this).attr('data-col'));
         $(this).addClass("been-clicked");
@@ -93,14 +105,16 @@ function handleClicks(tableElement, board, size) {
             let listElement = $("<li>");
             listElement.text("Lost with " + movesMade.toString() + " moves!");
             $("#result-data").append(listElement);
-            console.log("Name: " + name.val())
-            console.log("Board size: " + size.toString() + "x" + size.toString())
-            console.log("Bombs: " + minesCount.toString())
-            console.log("Result: " + "Lost")
-            console.log("Moves: " + movesMade.toString())
-            let result = {"name": name.val(), "board_size": size.toString() + "x" + size.toString(), "bombs": minesCount, "result": "Win", "moves": movesMade}
+
+            console.log("Name: " + name.val());
+            console.log("Board size: " + size.toString() + "x" + size.toString());
+            console.log("Bombs: " + minesCount.toString());
+            console.log("Result: " + "Lost");
+            console.log("Moves: " + movesMade.toString());
+
+            let result = {"name": name.val(), "board_size": size.toString() + "x" + size.toString(), "bombs": minesCount, "result": "Lose", "moves": movesMade};
             result["op"] = "entry";
-            postResultData(result)
+            postResultData(result);
             console.log(result);
 
             // reveal all bombs
@@ -112,7 +126,7 @@ function handleClicks(tableElement, board, size) {
                 }
             }
             $(".js-table").off();
-            alert("You have lost!");
+            // alert("You have lost!");  // causes a bug with mobiles?
         } else {
             let bombs = getNumberOfBombs(row, col, size, board);
             if (bombs === 0) {  // no bombs nearby
@@ -122,38 +136,45 @@ function handleClicks(tableElement, board, size) {
                     let cell = $('td[data-row="' + r + '"]td[data-col="' + c + '"]');
                     let nBombs = getNumberOfBombs(r, c, size, board);
                     if (nBombs !== 0) {  // don't show zeros
-                        cell.text(getNumberOfBombs(r, c, size, board));
+                        cell.text(nBombs);
+                        nbs[r][c] = nBombs;
                     }
                     if (cell.css("background-color") === defaultColor) {
                         cell.css("background-color", displayColor);
+                        boardInfo[r][c] = 2;
                         safeCellsLeft--;
                     }
                 }
             } else {  // one or more bombs nearby
                 $(this).text(bombs);
+                nbs[row][col] = bombs;
             }
             if ($(this).css("background-color") !== displayColor) safeCellsLeft--;
         }
         $(this).css("background-color", openedColor);
+        boardInfo[row][col] = 1;
         if (safeCellsLeft === 0) {
             let listElement = $("<li>");
             listElement.text("Won with " + movesMade.toString() + " moves!");
             $("#result-data").append(listElement);
             $(".js-table").off();
-            alert("You have won!");
+            // alert("You have won!");
 
-            console.log("Name: " + name.val())
-            console.log("Board size: " + size.toString() + "x" + size.toString())
-            console.log("Bombs: " + minesCount.toString())
-            console.log("Result: " + "Won")
-            console.log("Moves: " + movesMade.toString())
+            console.log("Name: " + name.val());
+            console.log("Board size: " + size.toString() + "x" + size.toString());
+            console.log("Bombs: " + minesCount.toString());
+            console.log("Result: " + "Won");
+            console.log("Moves: " + movesMade.toString());
 
             let result = {"name": name.val(), "board_size": size.toString() + "x" + size.toString(), "bombs": minesCount, "result": "Win", "moves": movesMade}
             result["op"] = "entry";
             postResultData(result);
             console.log(result);
-
         }
+        saveData.boardInfo = JSON.stringify(boardInfo);
+        saveData.neighbours = JSON.stringify(nbs);
+        saveData.moves = movesMade;
+        saveData.safeCells = safeCellsLeft;
     });
 }
 
@@ -186,7 +207,7 @@ function getNumberOfBombs(row, col, size, board) {
 let postResultData = (function (result) {
     $.ajax({
         type: "POST",
-        url: "http://dijkstra.cs.ttu.ee/~rareba/cgi-bin/test.py",
+        url: "http://dijkstra.cs.ttu.ee/~rareba/cgi-bin/action.py",
         data: result,
         success: function (data) {
             console.log('Submission was successful.');
@@ -199,15 +220,26 @@ let postResultData = (function (result) {
     });
 });
 
-function handleButtonPost(buttonElem, postData) {
+function handleButtonPost(buttonElem, postData, updateName, load) {
     buttonElem.click(function () {
+        if (updateName) {
+            postData.name = $("#js-name").val();
+        }
         $.ajax({
             type: "POST",
-            url: "http://dijkstra.cs.ttu.ee/~rareba/cgi-bin/test.py",
+            url: "http://dijkstra.cs.ttu.ee/~rareba/cgi-bin/action.py",
             data: postData,
             success: function (data) {
-                console.log('Submission was successful.');
-                console.log(data);
+                if (load) {
+                    console.log('Submission was successful.');
+                    console.log(data);
+                    console.log("Loading doesn't do anything YET!");
+                    loadTable(JSON.parse(data));
+                    // $("body").css('background-color', 'blue')
+                } else {
+                    console.log('Submission was successful.');
+                    console.log(data);
+                }
             },
             error: function (data) {
                 console.log('An error occurred.');
@@ -215,4 +247,50 @@ function handleButtonPost(buttonElem, postData) {
             },
         });
     });
+}
+
+function loadTable(data) {
+    console.log("Creating a new table based on load data!")
+    console.log(data)
+    $(".js-table").remove();
+    movesMade = data.moves;
+    $('#minesweeper-board').append('<table class="js-table"></table>');
+    let boardSize = data.board.length;
+    console.log("Board size:" + boardSize);
+    setupLoadBoard(boardSize, data);
+    name = $("#js-name");
+    safeCellsLeft = data.safeCells;
+}
+
+
+// setup the load board
+function setupLoadBoard(boardSize, data) {
+    console.log("Setting up the board...");
+    let cellsAmount = boardSize * boardSize;
+    let tableElement = $(".js-table");
+    let board = data.board;
+    let boardInfo = data.boardInfo;
+    let neighbours = data.neighbours;
+    for (let row = 0; row < boardSize; row++) {
+        let rowElement = $("<tr>");
+        tableElement.append(rowElement);
+        for (let col = 0; col < boardSize; col++) {
+            let cellElement = $("<td>");
+            cellElement.attr("data-row", row);
+            cellElement.attr("data-col", col);
+            let nbs = neighbours[row][col];
+            if (nbs !== 0) {
+                cellElement.text(nbs);
+            }
+            if (boardInfo[row][col] === 1) {
+                cellElement.css("background-color", openedColor);
+                cellElement.addClass("been-clicked");
+            } else if (boardInfo[row][col] === 2) {
+                cellElement.css("background-color", displayColor);
+            }
+            rowElement.append(cellElement);
+        }
+    }
+    saveData.board = JSON.stringify(board);
+    handleClicks(tableElement, board, boardSize, boardInfo, neighbours);
 }
