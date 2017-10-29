@@ -1,72 +1,37 @@
 [
   {
-    "bombs": 5,
-    "name": "Spam",
-    "result": "Lose",
-    "moves": 4,
-    "board_size": "6x6"
-  },
-  {
-    "bombs": 5,
-    "name": "Spam",
-    "result": "Lose",
-    "moves": 1,
-    "board_size": "6x6"
-  },
-  {
-    "bombs": 5,
-    "name": "Spam",
-    "result": "Lose",
-    "moves": 1,
-    "board_size": "6x6"
-  },
-  {
-    "bombs": 5,
-    "name": "Spam",
-    "result": "Lose",
-    "moves": 1,
-    "board_size": "6x6"
-  },
-  {
-    "bombs": 5,
-    "name": "Spam",
-    "result": "Lose",
+    "name": "Abc",
     "moves": 2,
-    "board_size": "6x6"
+    "board_size": "6x6",
+    "result": "Lose",
+    "bombs": 5
   },
   {
-    "bombs": 5,
-    "name": "Spam",
+    "name": "Goala",
+    "moves": 12,
+    "board_size": "6x6",
     "result": "Lose",
-    "moves": 4,
-    "board_size": "6x6"
+    "bombs": 5
   },
   {
-    "bombs": 5,
-    "name": "Spam",
+    "name": "orav",
+    "moves": 2,
+    "board_size": "6x6",
     "result": "Lose",
-    "moves": 1,
-    "board_size": "6x6"
+    "bombs": 5
   },
   {
-    "bombs": 5,
-    "name": "Spam",
+    "name": "orav",
+    "moves": 3,
+    "board_size": "9x9",
     "result": "Lose",
-    "moves": 1,
-    "board_size": "6x6"
+    "bombs": 5
   },
   {
-    "bombs": 5,
-    "name": "Spam",
-    "result": "Lose",
-    "moves": 7,
-    "board_size": "6x6"
-  },
-  {
-    "bombs": 5,
-    "name": "dada",
-    "result": "Lose",
-    "moves": 7,
-    "board_size": "6x6"
+    "name": "orav",
+    "moves": 90,
+    "board_size": "16x16",
+    "result": "Win",
+    "bombs": 5
   }
 ]

@@ -1,0 +1,71 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.results-header {
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.search {
+    margin-left: 10%;
+    padding-right: 10%;
+}
+
+.search-box {
+    margin-left: 12px;
+    display: inline;
+    width: auto;"
+}
+
+.results {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%
+}
+
+table {
+    width: 100%;
+}
+
+table, tr, td {
+    /*font-size: 30px;*/
+}
+
+tr .nr {
+  width: 4%;
+}
+
+tr .name {
+  width: 50%;
+}
+
+td.nr, td.name, td.size, td.bombs, td.result, td.moves {
+    font-weight: bold;
+}
+
+td.name:hover, td.size:hover, td.bombs:hover, td.result:hover, td.moves:hover {
+    background: #dfdfdf;
+    cursor: pointer;
+}
+
+td.nr, td.size, td.bombs, td.result, td.moves, td.d-nr, td.d-size, td.d-bombs, td.d-result, td.d-moves{
+    text-align: center;
+}
+
+.win-color {
+    color: green;
+}
+
+.lose-color {
+    color:red;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+    table {
+        font-size: 10px;
+    }
+
+}

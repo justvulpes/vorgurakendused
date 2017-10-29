@@ -12,35 +12,45 @@ save_path = "../prax3/saves.json"
 print("Content-type: text/html")
 print()
 
+states = {
+    "name": True,
+    "board_size": False,
+    "bombs": False,
+    "result": False,
+    "moves": False
+}
 
-def make_table():
-    print("""<meta charset='UTF-8'>
-    <style>
-    table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-    }
 
-    td, th {
-        text-align: left;
-        padding: 8px;
-    }
-
-    tr:nth-child(even) {
-        background-color: #eeeeee;
-    }
-    </style>""")
-
-    with open(results_path, "r") as f:
-        data = json.load(f)
-
-    r = "<table>"
-    r += "<tr><td><b>Name</b></td><td><b>Board Size</b></td><td><b>Bombs</b></td><td><b>Result</b></td><td><b>Moves<b/></td></tr>"
-    for d in data:
-        r += "<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>".format(d["name"], d["board_size"], d["bombs"], d["result"], d["moves"])
-    r += "</table>"
-    print("<html><head><title>action.py</title></head><body><h1>Minesweeper!</h1><p>Game results:</p>" + r + "</body>")
+def make_table(custom_data):
+    if custom_data:
+        data = custom_data
+    else:
+        with open(results_path, "r") as f:
+            data = json.load(f)
+    r = "<table class='table table-striped'>"
+    r += ("<thead><tr>"
+          "<td scope='col' class='nr'>#</td>"
+          "<td scope='col' class='name' onclick='sortCol(\"name\", {0})'>Name</td>"
+          "<td scope='col' class='size' onclick='sortCol(\"board_size\", {1})'>Size</td>"
+          "<td scope='col' class='bombs' onclick='sortCol(\"bombs\", {2})'>Bombs</td>"
+          "<td scope='col' class='result' onclick='sortCol(\"result\", {3})'>Result</td>"
+          "<td scope='col' class='moves' onclick='sortCol(\"moves\", {4})'>Moves</td>"
+          "</tr></thead>"
+          "<tbody>").format(json.dumps(states["name"]), json.dumps(states["board_size"]), json.dumps(states["bombs"]),
+                            json.dumps(states["result"]), json.dumps(states["moves"]))
+    for i, d in enumerate(data):
+        r += ("<tr>"
+              "<td class='d-nr'>{0}</td>"
+              "<td class='d-name'>{1}</td>"
+              "<td class='d-size'>{2}</td>"
+              "<td class='d-bombs'>{3}</td>"
+              "<td class='d-result {6}'>{4}</td>"
+              "<td class='d-moves'>{5}</td>"
+              "</tr>"
+              .format(i + 1, d["name"], d["board_size"], d["bombs"], d["result"], d["moves"],
+                      "win-color" if d["result"] == "Win" else "lose-color"))
+    r += "</tbody></table>"
+    print(r)
 
 
 def add_entry(file, entry):
@@ -91,9 +101,15 @@ def delete_all_entries(file):
 def sort_results(col_name, reverse=False):
     with open(results_path, "r") as f:
         data = json.load(f)
-    data.sort(key=lambda x: x[col_name], reverse=reverse)
+    data.sort(key=lambda x: x[col_name].lower() if isinstance(x[col_name], str) else x[col_name], reverse=reverse)
     with open(results_path, "w") as f:
         json.dump(data, f, indent=2)
+
+
+def search_by_name(name):
+    with open(results_path, "r") as f:
+        data = json.load(f)
+    return [entry for entry in data if entry["name"] == name]
 
 
 def main():
@@ -126,15 +142,26 @@ def main():
     elif form["op"].value == "load":
         print(load_game(save_path, form["name"].value), end="")
     elif form["op"].value == "delete":
-        print("DELETE SAVES!")
         delete_all_saves(save_path)
     elif form["op"].value == "delresults":
-        print("DELETE RESULTS!")
         delete_all_entries(results_path)
+    elif form["op"].value == "sort":
+        key = form["key"].value
+        if json.loads(form["reversed"].value):
+            states[key] = False
+            sort_results(key, True)
+        else:
+            states[key] = True
+            sort_results(key, False)
+        make_table(None)
+    elif form["op"].value == "search":
+        if "name" not in form.keys():
+            make_table(None)
+        else:
+            make_table(search_by_name(form["name"].value))
     elif form["op"].value == "display":
-        print("DISPLAY DATA!")
         sort_results("name")
-        make_table()
+        make_table(None)
     else:
         print("Something went wrong! Bad form data!")
 

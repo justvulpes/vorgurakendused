@@ -266,7 +266,6 @@ function loadTable(data) {
 // setup the load board
 function setupLoadBoard(boardSize, data) {
     console.log("Setting up the board...");
-    let cellsAmount = boardSize * boardSize;
     let tableElement = $(".js-table");
     let board = data.board;
     let boardInfo = data.boardInfo;
