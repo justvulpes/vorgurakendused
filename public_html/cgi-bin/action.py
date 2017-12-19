@@ -8,6 +8,8 @@ import random
 cgitb.enable()
 results_path = "../prax3/results.json"
 save_path = "../prax3/saves.json"
+mp_waiting_path = "../prax3/mp_waiting.json"
+mp_states_path = "../prax3/mp_states.json"
 
 print("Content-type: text/html")
 print()
@@ -22,6 +24,7 @@ states = {
 
 
 def make_table(custom_data):
+    """Make a table of results."""
     if custom_data:
         data = custom_data
     else:
@@ -54,6 +57,7 @@ def make_table(custom_data):
 
 
 def add_entry(file, entry):
+    """Add an entry to the result table."""
     with open(file, "r") as f:
         data = json.load(f)
     data.append(entry)
@@ -62,6 +66,7 @@ def add_entry(file, entry):
 
 
 def add_save(file, name, gameData):
+    """Add a save to file.json."""
     with open(file, "r") as f:
         data = json.load(f)
     data[name] = gameData
@@ -70,6 +75,7 @@ def add_save(file, name, gameData):
 
 
 def load_game(file, name):
+    """Load save from file.json."""
     with open(file, "r") as f:
         data = json.load(f)
     if name not in data:
@@ -78,11 +84,13 @@ def load_game(file, name):
 
 
 def delete_all_saves(file):
+    """Delete all saves from file.json."""
     with open(file, "w") as f:
         json.dump({}, f, indent=2)
 
 
 def delete_entry(file, name):
+    """Delete a single entry by name from results table."""
     with open(file, "r") as f:
         data = json.load(f)
     new_data = []
@@ -94,11 +102,13 @@ def delete_entry(file, name):
 
 
 def delete_all_entries(file):
+    """Delete all results table entries."""
     with open(file, "w") as f:
         json.dump([], f, indent=2)
 
 
 def sort_results(col_name, reverse=False):
+    """Sort the results by col_name, reverse the sort if reverse True."""
     with open(results_path, "r") as f:
         data = json.load(f)
     data.sort(key=lambda x: x[col_name].lower() if isinstance(x[col_name], str) else x[col_name], reverse=reverse)
@@ -107,6 +117,7 @@ def sort_results(col_name, reverse=False):
 
 
 def search_by_name(name):
+    """Show only fields with specific name."""
     with open(results_path, "r") as f:
         data = json.load(f)
     return [entry for entry in data if entry["name"] == name]
@@ -143,6 +154,30 @@ def main():
         print(load_game(save_path, form["name"].value), end="")
     elif form["op"].value == "delete":
         delete_all_saves(save_path)
+    elif form["op"].value == "create":
+        if "name" in form.keys():
+            print(form["name"].value)
+            add_save(mp_waiting_path, form["name"].value, "Waiting")
+        else:
+            print("No name!")
+    elif form["op"].value == "join":
+        if "name" in form.keys():
+            print("Supposed to join!")
+            print(form["name"].value)
+            add_save(mp_waiting_path, form["name"].value, "Trying to join")
+        else:
+            print("No name!")
+    elif form["op"].value == "mpsave":
+        print("SAVE DATA!")
+        print(form["board"].value)
+        print(form["boardInfo"].value)
+        print(form["moves"].value)
+        print(form["safeCells"].value)
+        data = {"board": json.loads(form["board"].value), "boardInfo": json.loads(form["boardInfo"].value),
+                "moves": form["moves"].value, "safeCells": form["safeCells"].value, "neighbours": json.loads(form["neighbours"].value)}
+        add_save(mp_states_path, form["name"].value, data)
+    elif form["op"].value == "mpload":
+        print(load_game(mp_states_path, form["name"].value), end="")
     elif form["op"].value == "delresults":
         delete_all_entries(results_path)
     elif form["op"].value == "sort":

@@ -5,9 +5,8 @@
 $(document).ready(function () {
     console.log("Document ready.");
     $("#js-save").prop("disabled", true);
-    handleBeginButton();
-    handleButtonPost($("#js-save"), saveData, true, false);
-    handleButtonPost($("#js-load"), loadData, true, true);
+    handleCreateButton();
+    handleButtonPost($("#mp-refresh"), loadData, true, true);
 });
 
 // global variables
@@ -25,16 +24,32 @@ let saveData = {
 let loadData = {"op": "load", "name": "tempname"};
 let myMove = true;
 
-// TODO: END GAME IF SOMEONE REFRESHES/LEAVES PAGE?
-// window.onbeforeunload = function() {
-//     let result = {"name": "Test123", "board_size": "6x6", "bombs": 12, "result": "Win", "moves": 18}
-//         result["op"] = "entry";
-//         postResultData(result);
-// }
+$("#mp-join").click(function () {
+    console.log("Cmon!");
+    let refreshId = setInterval(function () {
+        loadData.name = $("#js-name").val();
+        console.log(loadData);
+        $.ajax({
+            type: "POST",
+            url: "http://dijkstra.cs.ttu.ee/~rareba/cgi-bin/action.py",
+            data: loadData,
+            success: function (data) {
+                console.log('Submission was successful.');
+                console.log(data);
+                game_data = JSON.parse(data);
+                if (game_data.length !== 0) loadTable(game_data);
+            },
+            error: function (data) {
+                console.log('An error occurred.');
+                console.log(data);
+            },
+        });
+    }, 1000);
+});
 
 // handle clicking on Begin button
-function handleBeginButton() {
-    $("#js-begin").click(function () {
+function handleCreateButton() {
+    $("#mp-create").click(function () {
         $(".js-table").remove();
         movesMade = 0;
         $('#minesweeper-board').append('<table class="js-table"></table>');
@@ -192,6 +207,34 @@ function handleClicks(tableElement, board, size, boardInfo, nbs) {
         saveData.neighbours = JSON.stringify(nbs);
         saveData.moves = movesMade;
         saveData.safeCells = safeCellsLeft;
+        saveState(saveData, true, false);
+    });
+}
+
+function saveState(postData, updateName, load) {
+    if (updateName) {
+        postData.name = $("#js-name").val();
+    }
+    console.log(postData);
+    $.ajax({
+        type: "POST",
+        url: "http://dijkstra.cs.ttu.ee/~rareba/cgi-bin/action.py",
+        data: postData,
+        success: function (data) {
+            if (load) {
+                console.log('Submission was successful.');
+                console.log(data);
+                game_data = JSON.parse(data);
+                if (game_data.length !== 0) loadTable(game_data);
+            } else {
+                console.log('Submission was successful.');
+                console.log(data);
+            }
+        },
+        error: function (data) {
+            console.log('An error occurred.');
+            console.log(data);
+        },
     });
 }
 

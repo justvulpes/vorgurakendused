@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData">
+    <serverData>
+      <paths name="dijkstra">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/rareba/public_html/prax4" local="$PROJECT_DIR$" web="/~rareba/prax4" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

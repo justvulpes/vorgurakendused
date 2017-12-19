@@ -1,0 +1,227 @@
+/*
+ * Globals
+ */
+
+body {
+    padding-top: 3.5rem;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.news-post {
+    margin-top: 2%;
+}
+
+.news-post-meta {
+    padding-top: 0;
+    color: #888;
+    font-size: 13px;
+}
+
+.news-post-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.newsfeed {
+    padding-left: 15%;
+    padding-right: 8%;
+}
+
+.row {
+    margin-right: 0;
+}
+
+.centered-body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
+}
+
+.centered-body-view {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-color: #eee;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-submit {
+    max-width: 340px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.comment-button {
+    font-size: 16px;
+    width: 15%;
+    padding: 2px;
+}
+
+.comment-box {
+    width: 45%;
+    height: 110px;
+    background: #f2f5f8 none;
+}
+
+.comment-box:focus {
+    background: #f2f5f8 none;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.news-box {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    background: #e9ecef none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    overflow: hidden;
+}
+
+.news-box:focus {
+    outline: none;
+}
+
+.small-text {
+    text-align: left;
+    font-size: 16px;
+    color: grey;
+    padding-left: 3px;
+}
+
+
+.score {
+    color: gray;
+    padding-left: 2px;
+    font-size: 24px;
+}
+
+.voteup {
+    display: inline-block;
+    overflow: hidden;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    background: url('http://i.stack.imgur.com/iqN2k.png') 0 -25px;
+    float: left;
+    clear: left;
+}
+
+.value {
+    display: table;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.votedown {
+    display: inline-block;
+    overflow: hidden;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    background: url('http://i.stack.imgur.com/iqN2k.png') 0 -25px;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    -ms-filter: "FlipV";
+    float: left;
+    clear: left;
+}
+
+.voteup.on {
+    background-position: 0 2px;
+    float: left;
+    clear: left;
+}
+
+.votedown.on {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    -ms-filter: "FlipV";
+    background-position: 0 2px;
+    float: left;
+    clear: left;
+}
+
+.voting {
+    width: 39px;
+    float: left;
+    clear: left;
+
+}
+
+.title-meta {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 50px;
+}
+
+.comment {
+    margin-top: 15px;
+    border: solid 1px lightgrey;
+    padding: 6px;
+    overflow: hidden;
+}
+
+.comment-meta {
+    font-size: 11px;
+    color: gray;
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+    .comment-button {
+        font-size: 8px;
+    }
+
+    .comment-box {
+        height: 70px;
+    }
+}

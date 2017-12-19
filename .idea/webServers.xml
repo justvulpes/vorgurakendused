@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a4ca76d6-980e-4e61-b56c-46b18fb2dd24" name="dijkstra" url="http://dijkstra.cs.ttu.ee">
+        <fileTransfer host="dijkstra.cs.ttu.ee" port="22" rootFolder="/home/rareba" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

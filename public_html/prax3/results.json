@@ -1,37 +1,79 @@
 [
   {
-    "name": "Abc",
+    "result": "Lose",
+    "name": "Hey",
     "moves": 2,
-    "board_size": "6x6",
-    "result": "Lose",
-    "bombs": 5
+    "bombs": 5,
+    "board_size": "6x6"
   },
   {
-    "name": "Goala",
-    "moves": 12,
-    "board_size": "6x6",
     "result": "Lose",
-    "bombs": 5
+    "name": "Hey",
+    "moves": 9,
+    "bombs": 5,
+    "board_size": "6x6"
   },
   {
-    "name": "orav",
-    "moves": 2,
-    "board_size": "6x6",
     "result": "Lose",
-    "bombs": 5
+    "name": "Hey",
+    "moves": 9,
+    "bombs": 5,
+    "board_size": "6x6"
   },
   {
-    "name": "orav",
-    "moves": 3,
-    "board_size": "9x9",
     "result": "Lose",
-    "bombs": 5
+    "name": "ra",
+    "moves": 4,
+    "bombs": 5,
+    "board_size": "6x6"
   },
   {
-    "name": "orav",
-    "moves": 90,
-    "board_size": "16x16",
+    "result": "Lose",
+    "name": "ra",
+    "moves": 16,
+    "bombs": 5,
+    "board_size": "6x6"
+  },
+  {
     "result": "Win",
-    "bombs": 5
+    "name": "ra",
+    "moves": 20,
+    "bombs": 5,
+    "board_size": "6x6"
+  },
+  {
+    "result": "Lose",
+    "name": "Ragnar",
+    "moves": 4,
+    "bombs": 5,
+    "board_size": "6x6"
+  },
+  {
+    "result": "Lose",
+    "name": "Ragnar",
+    "moves": 12,
+    "bombs": 5,
+    "board_size": "6x6"
+  },
+  {
+    "result": "Lose",
+    "name": "Ragnar",
+    "moves": 22,
+    "bombs": 5,
+    "board_size": "6x6"
+  },
+  {
+    "result": "Lose",
+    "name": "Ragnar",
+    "moves": 23,
+    "bombs": 5,
+    "board_size": "6x6"
+  },
+  {
+    "result": "Win",
+    "name": "Ragnar",
+    "moves": 26,
+    "bombs": 5,
+    "board_size": "6x6"
   }
 ]

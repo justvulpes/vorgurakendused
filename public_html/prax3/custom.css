@@ -2,6 +2,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.body-padding {
+    padding-left: 5%;
+}
+
 .results-header {
     margin-left: 10%;
     margin-top: 2%;
@@ -11,6 +15,20 @@ body {
 .search {
     margin-left: 10%;
     padding-right: 10%;
+}
+
+.debug-search-title {
+    margin: 2% 5% 2%;
+}
+
+.debug-search-form {
+    margin-left: 5%;
+    margin-right: 50%;
+}
+
+.delete-buttons {
+    margin-left: 5%;
+    margin-top: 1%;
 }
 
 .search-box {
